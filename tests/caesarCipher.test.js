@@ -27,3 +27,11 @@ test("ignores numbers", () => {
 test("big shift factor", () => {
   expect(caesarCipher("metroid prime", 15)).toBe("btigdxs egxbt");
 });
+
+test("shift factor 0", () => {
+  expect(caesarCipher("samus", 0)).toBe("samus");
+});
+
+test("negative shift factor", () => {
+  expect(caesarCipher("not supposed to work", -5)).toBe("not supposed to work");
+});
