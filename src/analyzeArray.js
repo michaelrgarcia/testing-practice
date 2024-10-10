@@ -17,7 +17,9 @@ function min(array) {
 
     if (i === 0) {
       smallestElement = array[0]; // need a base to compare to
-    } else if (smallestElement > currentElement) {
+    }
+
+    if (smallestElement > currentElement) {
       smallestElement = currentElement;
     }
   }
@@ -33,7 +35,9 @@ function max(array) {
 
     if (i === 0) {
       biggestElement = array[0]; // need a base to compare to
-    } else if (biggestElement < currentElement) {
+    }
+
+    if (biggestElement < currentElement) {
       biggestElement = currentElement;
     }
   }
